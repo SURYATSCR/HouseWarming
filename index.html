@@ -223,5 +223,30 @@
         </div>
     </div>
 
+    <!-- Background music: a 30-second clip (music.mp3, in the same folder as this file) that loops.
+         Browsers block sound from autoplaying, so the music starts on the visitor's first tap/click
+         anywhere on the page; the round button at the bottom-right turns it on/off. -->
+    <audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
+    <button id="musicBtn" title="Music on/off" class="fixed bottom-4 right-4 z-50 w-11 h-11 rounded-full bg-amber-500 text-red-950 text-xl shadow-lg flex items-center justify-center">🔇</button>
+    <script>
+        const music = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicBtn');
+        music.volume = 0.5;
+        let musicStarted = false;
+        function startMusic() {
+            if (musicStarted) return;
+            const p = music.play();
+            if (p) { p.then(() => { musicStarted = true; musicBtn.textContent = '🎵'; }).catch(() => {}); }
+        }
+        document.addEventListener('click', startMusic);
+        document.addEventListener('touchstart', startMusic);
+        startMusic(); // works right away on browsers that allow autoplay
+        musicBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            if (music.paused) { music.play(); musicStarted = true; musicBtn.textContent = '🎵'; }
+            else { music.pause(); musicBtn.textContent = '🔇'; }
+        });
+    </script>
+
 </body>
 </html>
