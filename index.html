@@ -40,6 +40,11 @@
             border-image-slice: 31% 34%;
             border-image-width: 34px 28px;
             border-image-repeat: round;
+            /* border.jpg sits as a mat between the gold frame and the apartment photo */
+            background-image: url('border.jpg');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         /* Rich Metallic Gold Typography */
         .gold-text {
@@ -100,9 +105,9 @@
             <img src="cow-calf.png" alt="గోమాత మరియు దూడ" class="w-14 sm:w-20 h-auto flex-shrink-0 drop-shadow-md">
         </div>
 
-        <!-- Top Image Section (Reduced size, pattern shows around it, gold border frame around the photo) -->
+        <!-- Top Image Section (pattern around it; gold frame, border.jpg mat, then the photo) -->
         <div class="px-5 py-5 sm:px-8 sm:py-6">
-            <div class="apartment-frame max-w-[94%] sm:max-w-[90%] mx-auto p-3 sm:p-4">
+            <div class="apartment-frame max-w-[94%] sm:max-w-[90%] mx-auto p-6 sm:p-8">
                 <div class="rounded-lg overflow-hidden shadow-lg border border-amber-400/30">
                     <img src="apartment.jpg" alt="లక్ష్మీ వల్లభ నిలయం" class="w-full h-auto block">
                     <div class="bg-black/35 py-3 px-4 text-center border-t border-amber-400/30">
