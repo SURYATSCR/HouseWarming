@@ -15,16 +15,15 @@
         .heading-font {
             font-family: 'Yatra One', cursive;
         }
-        /* Gold mandala border frame (transparent PNG). The frame gets its OWN border space
-           (border-width below) so it never paints over the content; the maroon background
-           fills behind the transparent parts of the frame. */
+        /* Gold mandala border frame (transparent PNG). The visible border stays thin (4px);
+           the frame image is drawn in a 56px/48px band over the container's padding area,
+           and the container's padding (see the main div) keeps all content clear of that band.
+           If gold-border.png is not found, you only get the thin 4px gold line — never a thick slab. */
         .custom-border-frame {
-            border-style: solid;
-            border-width: 52px 44px;
-            border-color: #D4AF37;
+            border: 4px solid #D4AF37;
             border-image-source: url('gold-border.png');
             border-image-slice: 31% 34%;
-            border-image-width: 52px 44px;
+            border-image-width: 56px 48px;
             border-image-repeat: round;
         }
         /* Rich Metallic Gold Typography */
@@ -47,7 +46,7 @@
 
 
     <!-- Main Invitation Container -->
-    <div class="max-w-xl w-full bg-[#8B1E08] text-amber-50 shadow-2xl overflow-hidden custom-border-frame my-4">
+    <div class="max-w-xl w-full bg-[#8B1E08] text-amber-50 shadow-2xl overflow-hidden custom-border-frame my-4 px-2 pt-3 pb-6">
 
         <!-- Top Heading (Ganesha image on the left of the text, whole group centred) -->
         <div class="flex items-center justify-center gap-3 pt-4 px-3">
