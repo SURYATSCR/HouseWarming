@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>తాతిరెడ్డి వారి గృహప్రవేశ ఆహ్వాము</title>
+    <title>తాతిరెడ్డి వారి గృహప్రవేశ ఆహ్వానము</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for Telugu -->
@@ -20,25 +20,34 @@
             border: 0.3cm solid transparent;
             border-image: url('border.jpg') 30 repeat;
         }
+        /* Rich Metallic Gold Typography */
+        .gold-text {
+            background: linear-gradient(180deg, #FFF3B0 0%, #FFD700 45%, #D4AF37 80%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+        }
     </style>
 </head>
 <body class="bg-[#fffbeb] min-h-screen flex flex-col items-center justify-center p-4 sm:p-6">
 
-    <!-- Applied exact rich red background (#8B1E08) inside the invitation card -->
+    <!-- Main Invitation Container -->
     <div class="max-w-xl w-full bg-[#8B1E08] text-amber-50 shadow-2xl rounded-2xl overflow-hidden custom-border-frame my-4">
 
         <!-- Header -->
-        <div class="bg-black/25 text-amber-200 py-3 px-3 sm:px-4 flex items-center justify-between gap-2 border-b border-amber-400/30">
+        <div class="bg-black/25 py-3 px-3 sm:px-4 flex items-center justify-between gap-2 border-b border-amber-400/30">
             <img src="Ganesha.png" alt="శ్రీ మహాగణపతి" class="w-16 h-16 sm:w-24 sm:h-24 object-contain flex-shrink-0 drop-shadow-md">
-            <h2 class="text-xl sm:text-3xl font-bold tracking-wide text-center leading-snug text-amber-200">తాతిరెడ్డి వారి గృహప్రవేశ ఆహ్వానము</h2>
+            <h2 class="text-xl sm:text-3xl font-bold tracking-wide text-center leading-snug gold-text">
+                తాతిరెడ్డి వారి గృహప్రవేశ ఆహ్వానము
+            </h2>
             <img src="balaji2.webp" alt="శ్రీ వేంకటేశ్వర స్వామి" class="w-16 h-16 sm:w-24 sm:h-24 object-contain flex-shrink-0 drop-shadow-md">
         </div>
         
         <!-- Top Image Section (Full Uncropped Image) -->
         <div class="relative w-full bg-black/20">
             <img src="apartment.jpg" alt="లక్ష్మీ వల్లభ నిలయం" class="w-full h-auto block">
-            <div class="bg-black/35 text-amber-200 py-3 px-4 text-center border-t border-b border-amber-400/30">
-                <h1 class="text-2xl sm:text-3xl font-bold tracking-wide">లక్ష్మీ వల్లభ నిలయము</h1>
+            <div class="bg-black/35 py-3 px-4 text-center border-t border-b border-amber-400/30">
+                <h1 class="text-2xl sm:text-3xl font-bold tracking-wide gold-text">లక్ష్మీ వల్లభ నిలయం</h1>
             </div>
         </div>
 
@@ -49,22 +58,23 @@
                 మా గృహప్రవేశ మహోత్సవానికి విచ్చేసి మీ ఆశీస్సులు అందజేయాల్సిందిగా మా ప్రార్థన.
             </p>
 
+            <!-- Invitees / Hosts Names in Gold Font -->
             <div class="border-t border-b border-amber-400/40 py-4 my-4 space-y-2">
                 <p class="text-sm text-amber-300 font-semibold">ఆహ్వానితులు:</p>
-                <p class="text-xl sm:text-2xl font-bold text-white">తాతిరెడ్డి వెంకట రమణ శ్రీనివాస రెడ్డి</p>
-                <p class="text-xl sm:text-2xl font-bold text-white">తాతిరెడ్డి పద్మావతి</p>
+                <p class="text-xl sm:text-2xl font-bold gold-text">తాతిరెడ్డి వెంకట రమణ శ్రీనివాస రెడ్డి</p>
+                <p class="text-xl sm:text-2xl font-bold gold-text">తాతిరెడ్డి పద్మావతి</p>
             </div>
 
-            <!-- Event Details Cards -->
+            <!-- Event Details Cards (Dates & Timings in Gold Font) -->
             <div class="space-y-4 text-left my-6">
                 <!-- Event 1 -->
                 <div class="bg-black/20 p-4 rounded-xl border border-amber-400/40 shadow-sm">
                     <div class="flex items-start space-x-3">
                         <span class="text-2xl">🏡</span>
                         <div>
-                            <h3 class="font-bold text-lg text-amber-300">ముహూర్తము</h3>
-                            <p class="text-amber-50 text-sm sm:text-base"> 25 నవంబర్ 2026 బుధవారం</p>
-                            <p class="text-amber-50 text-sm sm:text-base"> రాత్రి 9:30 గంటలకు</p>
+                            <h3 class="font-bold text-lg gold-text">ముహూర్తం</h3>
+                            <p class="text-[#FFD700] text-sm sm:text-base font-medium"><strong>తేదీ:</strong> 25 నవంబర్ 2026 (బుధవారం)</p>
+                            <p class="text-[#FFD700] text-sm sm:text-base font-medium"><strong>ముహూర్తం:</strong> రాత్రి 9:30 గంటలకు</p>
                         </div>
                     </div>
                 </div>
@@ -74,9 +84,9 @@
                     <div class="flex items-start space-x-3">
                         <span class="text-2xl">🪔</span>
                         <div>
-                            <h3 class="font-bold text-lg text-amber-300">సత్యనారాయణ స్వామి వారి వ్రతము</h3>
-                            <p class="text-amber-50 text-sm sm:text-base"> 26 నవంబర్ 2026 గురువారం</p>
-                            <p class="text-amber-50 text-sm sm:text-base"> ఉదయం 7:00 గంటలకు</p>
+                            <h3 class="font-bold text-lg gold-text">సత్యనారాయణ స్వామి వారి వ్రతం</h3>
+                            <p class="text-[#FFD700] text-sm sm:text-base font-medium"><strong>తేదీ:</strong> 26 నవంబర్ 2026 (గురువారం)</p>
+                            <p class="text-[#FFD700] text-sm sm:text-base font-medium"><strong>సమయం:</strong> ఉదయం 10:00 గంటలకు</p>
                         </div>
                     </div>
                 </div>
@@ -86,19 +96,19 @@
                     <div class="flex items-start space-x-3">
                         <span class="text-2xl">🍽️</span>
                         <div>
-                            <h3 class="font-bold text-lg text-amber-300">విందు</h3>
-                            <p class="text-amber-50 text-sm sm:text-base"> 26 నవంబర్ 2026 గురువారం</p>
-                            <p class="text-amber-50 text-sm sm:text-base"> మధ్యాహ్నం 12:00 గంటలకు</p>
+                            <h3 class="font-bold text-lg gold-text">విందు</h3>
+                            <p class="text-[#FFD700] text-sm sm:text-base font-medium"><strong>తేదీ:</strong> 26 నవంబర్ 2026 (గురువారం)</p>
+                            <p class="text-[#FFD700] text-sm sm:text-base font-medium"><strong>సమయం:</strong> మధ్యాహ్నం 12:00 గంటలకు</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Address Section -->
+            <!-- Address Section in Gold Font -->
             <div class="bg-black/25 p-4 rounded-xl text-center space-y-2 border border-amber-400/40">
-                <h3 class="font-bold text-amber-300 text-lg">అడ్రస్</h3>
-                <p class="text-amber-50 text-sm sm:text-base font-medium">
-                    లక్ష్మీ వల్లభ నిలయం, 1వ అంతస్తు <br> 2వ లైన్ శ్యామలా నగర్ <br> బాలకుటీర్ స్కూల్ ఎదురుగా <br> గుంటూరు.
+                <h3 class="font-bold text-lg gold-text">అడ్రస్</h3>
+                <p class="text-[#FFD700] text-sm sm:text-base font-semibold leading-relaxed">
+                    ఫ్లాట్ నెం. 102, 1వ అంతస్తు, లక్ష్మీ వల్లభ నిలయం <br> 2వ లైన్ శ్యామలా నగర్ <br> బాలకుటీర్ స్కూల్ ఎదురుగా <br> గుంటూరు.
                 </p>
                 
                 <div class="pt-2">
@@ -113,10 +123,10 @@
             <!-- Contact Section -->
             <div class="pt-4 border-t border-amber-400/40">
                 <p class="text-sm text-amber-200">ఫోన్ నెంబర్</p>
-                <a href="tel:+919491129456" class="text-amber-300 font-bold text-lg hover:underline block mt-1">
+                <a href="tel:+919491129456" class="text-[#FFD700] font-bold text-lg hover:underline block mt-1">
                     📞 +91 9491129456
                 </a>
-                <a href="tel:+919885235047" class="text-amber-300 font-bold text-lg hover:underline block mt-1">
+                <a href="tel:+919885235047" class="text-[#FFD700] font-bold text-lg hover:underline block mt-1">
                     📞 +91 9885235047
                 </a>
             </div>
@@ -125,7 +135,7 @@
 
         <!-- Footer -->
         <div class="bg-black/35 text-amber-200 text-center py-3 text-sm border-t border-amber-400/30">
-            బంధు మిత్రుల అభినందనలతోు
+            బంధు మిత్రుల అభినందనలతో
         </div>
     </div>
 
