@@ -40,11 +40,6 @@
             border-image-slice: 31% 34%;
             border-image-width: 34px 28px;
             border-image-repeat: round;
-            /* border.jpg sits as a mat between the gold frame and the apartment photo */
-            background-image: url('border.jpg');
-            background-size: 100% 100%;
-            background-position: center;
-            background-repeat: no-repeat;
         }
         /* Rich Metallic Gold Typography */
         .gold-text {
@@ -96,18 +91,17 @@
             </svg>
         </div>
 
-        <!-- Title with the couple on its left and the cow & calf on its right -->
-        <div class="flex items-center justify-between gap-2 px-1 sm:px-3 mt-3">
-            <img src="couple-entering.png" alt="గృహప్రవేశము చేస్తున్న దంపతులు" class="w-14 sm:w-20 h-auto flex-shrink-0 drop-shadow-md">
+        <!-- Title with the couple & cow-calf image on its left (cow & calf are inside that image now) -->
+        <div class="flex items-center justify-center gap-2 sm:gap-3 px-1 sm:px-3 mt-3">
+            <img src="couple-entering.png" alt="గోమాత, దూడతో గృహప్రవేశము చేస్తున్న దంపతులు" class="w-14 sm:w-20 h-auto flex-shrink-0 drop-shadow-md">
             <h2 class="text-xl sm:text-3xl font-bold tracking-wide text-center leading-snug gold-text">
                 తాతిరెడ్డి వారి<br>గృహప్రవేశము ఆహ్వానము
             </h2>
-            <img src="cow-calf.png" alt="గోమాత మరియు దూడ" class="w-14 sm:w-20 h-auto flex-shrink-0 drop-shadow-md">
         </div>
 
-        <!-- Top Image Section (pattern around it; gold frame, border.jpg mat, then the photo) -->
+        <!-- Top Image Section (Reduced size, invitation colour around it) -->
         <div class="px-5 py-5 sm:px-8 sm:py-6">
-            <div class="apartment-frame max-w-[94%] sm:max-w-[90%] mx-auto p-6 sm:p-8">
+            <div class="apartment-frame max-w-[94%] sm:max-w-[90%] mx-auto p-1 sm:p-1.5">
                 <div class="rounded-lg overflow-hidden shadow-lg border border-amber-400/30">
                     <img src="apartment.jpg" alt="లక్ష్మీ వల్లభ నిలయం" class="w-full h-auto block">
                     <div class="bg-black/35 py-3 px-4 text-center border-t border-amber-400/30">
